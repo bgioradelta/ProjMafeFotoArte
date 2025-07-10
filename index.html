@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mafê Brandrão Foto Arte</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <div class="top-bar">
+    <p><a href="#">Cadastre-se para acesso antecipado às novas obras</a></p>
+  </div>
+
+  <!-- Menu Principal -->
+  <header class="main-header">
+    <div class="logo">MAFÊ</div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#">COLEÇÃO</a></li>
+        <li><a href="#">ARTISTAS</a></li>
+        <li><a href="#">SOBRE</a></li>
+        <li><a href="#">CONTATO</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <button title="Conta">👤</button>
+      <button title="Buscar">🔍</button>
+      <button title="Carrinho">🛍️</button>
+    </div>
+  </header>
+
+  <!-- Título Central -->
+  <section class="section-title">
+    <div class="line"></div>
+    <div class="section-heading">
+      <p>MAFÊ BRANDRÃO</p>
+      <h1>FOTO ARTE</h1>
+    </div>
+    <div class="line"></div>
+  </section>
+
+  <!-- Filtros com busca -->
+  <section class="filters">
+    <input type="text" id="searchInput" placeholder="Buscar fotografias...">
+    <input type="number" id="minPrice" placeholder="Preço mínimo">
+    <input type="number" id="maxPrice" placeholder="Preço máximo">
+    <select id="colorFilter">
+      <option value="">Cor principal</option>
+      <option value="preto">Preto</option>
+      <option value="branco">Branco</option>
+      <option value="vermelho">Vermelho</option>
+      <option value="verde">Verde</option>
+    </select>
+    <select id="themeFilter">
+      <option value="">Tema</option>
+      <option value="urbano">Urbano</option>
+      <option value="retratos">Retratos</option>
+      <option value="natureza">Natureza</option>
+      <option value="futebol">Futebol</option>
+    </select>
+  </section>
+
+  <!-- Galeria de Produtos -->
+  <section class="gallery">
+    <div class="product-card" data-name="Robot" data-color="preto" data-theme="urbano" data-price="280">
+      <img src="robot.jpg" alt="Foto artística de robô" loading="lazy" />
+      <div class="info">
+        <h3>Robot</h3>
+        <p class="artist">Tecnologia</p>
+        <p class="price">A partir de R$ 280</p>
+      </div>
+    </div>
+
+    <div class="product-card" data-name="Hairdresser" data-color="vermelho" data-theme="retratos" data-price="340">
+      <img src="hairdresser.jpg" alt="Retrato de um cabeleireiro" loading="lazy" />
+      <div class="info">
+        <h3>Hairdresser</h3>
+        <p class="artist">Cotidiano</p>
+        <p class="price">A partir de R$ 340</p>
+      </div>
+    </div>
+
+    <div class="product-card" data-name="Mounjaro" data-color="branco" data-theme="natureza" data-price="310">
+      <img src="mounjaro.avif" alt="Paisagem natural com Mounjaro" loading="lazy" />
+      <div class="info">
+        <h3>Mounjaro</h3>
+        <p class="artist">Saúde</p>
+        <p class="price">A partir de R$ 310</p>
+      </div>
+    </div>
+
+    <div class="product-card" data-name="Botafogo" data-color="verde" data-theme="futebol" data-price="290">
+      <img src="botafogo.webp" alt="Fotografia do time Botafogo" loading="lazy" />
+      <div class="info">
+        <h3>Botafogo</h3>
+        <p class="artist">Futebol</p>
+        <p class="price">A partir de R$ 290</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
