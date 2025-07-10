@@ -1,0 +1,177 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+/* Top notification */
+.top-bar {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.top-bar a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #111;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #888;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+/* Título central */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.section-title .line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.section-heading {
+  margin: 0 20px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+}
+
+.section-heading p {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.2rem;
+  color: #777;
+}
+
+.section-heading h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* Filtros */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.filters input[type="text"],
+.filters input,
+.filters select {
+  padding: 10px;
+  font-size: 14px;
+  min-width: 200px;
+  flex: 1;
+}
+
+/* Mobile-friendly filters */
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Galeria */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 2rem 4rem;
+}
+
+.product-card {
+  width: 300px;
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  border: 8px solid #f2f2f2;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-card .info {
+  margin-top: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.product-card .artist {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.product-card .price {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
