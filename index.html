@@ -18,7 +18,15 @@
   <!-- Menu Principal -->
   <header class="main-header">
     <div class="logo">MAFÊ</div>
-    <nav class="nav-menu">
+
+    <!-- Botão Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
       <ul>
         <li><a href="#">COLEÇÃO</a></li>
         <li><a href="#">ARTISTAS</a></li>
@@ -26,26 +34,39 @@
         <li><a href="#">CONTATO</a></li>
       </ul>
     </nav>
+
     <div class="icons">
       <button title="Conta">👤</button>
       <button title="Buscar">🔍</button>
       <button title="Carrinho">🛍️</button>
     </div>
-  </header>
+    </header>
+    
+    <!-- Título Central -->
+    <section class="section-title">
+      <div class="section-heading">
+        <p>MAFÊ BRANDRÃO</p>
+        <h1>FOTO ARTE</h1>
+        <div class="line"></div> <!-- Agora está abaixo do título -->
+      </div>
+    </section>
 
-  <!-- Título Central -->
-  <section class="section-title">
-    <div class="section-heading">
-      <p>MAFÊ BRANDRÃO</p>
-      <h1>FOTO ARTE</h1>
-      <div class="line"></div>
-    </div>
-  </section>
+<!-- Carrossel de Fotos -->
+<section class="carousel">
+  <div class="carousel-track">
+    <img src="robot.jpg" alt="Foto artística de robô">
+    <img src="hairdresser.jpg" alt="Retrato de um cabeleireiro">
+    <img src="mounjaro.avif" alt="Paisagem natural com Mounjaro">
+    <img src="botafogo.webp" alt="Fotografia do time Botafogo">
+    <img src="nova.jpg" alt="Nova imagem artística">
+    <img src="robot.jpg" alt="Foto artística de robô (cópia)">
+  </div>
+</section>
 
-
-  <!-- Filtros com busca -->
-  <section class="filters">
-    <input type="text" id="searchInput" placeholder="Buscar fotografias...">
+    
+    <!-- Filtros com busca -->
+    <!-- <section class="filters">
+      <input type="text" id="searchInput" placeholder="Buscar fotografias...">
     <input type="number" id="minPrice" placeholder="Preço mínimo">
     <input type="number" id="maxPrice" placeholder="Preço máximo">
     <select id="colorFilter">
@@ -62,7 +83,7 @@
       <option value="natureza">Natureza</option>
       <option value="futebol">Futebol</option>
     </select>
-  </section>
+  </section> -->
 
   <!-- Galeria de Produtos -->
   <section class="gallery">
