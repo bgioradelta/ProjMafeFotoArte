@@ -53,13 +53,19 @@
 
 <!-- Carrossel de Fotos -->
 <section class="carousel">
+  <button class="carousel-controls carousel-prev" onclick="changeSlide(-1)">‹</button>
   <div class="carousel-track">
     <img src="robot.jpg" alt="Foto artística de robô">
     <img src="hairdresser.jpg" alt="Retrato de um cabeleireiro">
     <img src="mounjaro.avif" alt="Paisagem natural com Mounjaro">
     <img src="botafogo.webp" alt="Fotografia do time Botafogo">
-    <img src="nova.jpg" alt="Nova imagem artística">
-    <img src="robot.jpg" alt="Foto artística de robô (cópia)">
+  </div>
+  <button class="carousel-controls carousel-next" onclick="changeSlide(1)">›</button>
+  <div class="carousel-indicators">
+    <button class="carousel-indicator active" onclick="currentSlide(1)"></button>
+    <button class="carousel-indicator" onclick="currentSlide(2)"></button>
+    <button class="carousel-indicator" onclick="currentSlide(3)"></button>
+    <button class="carousel-indicator" onclick="currentSlide(4)"></button>
   </div>
 </section>
 

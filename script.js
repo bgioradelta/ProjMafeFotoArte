@@ -43,3 +43,50 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("show");
 });
+
+// ===== CARROSSEL =====
+let currentSlideIndex = 0;
+const slides = document.querySelectorAll('.carousel-track img');
+const indicators = document.querySelectorAll('.carousel-indicator');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  const track = document.querySelector('.carousel-track');
+  const slideWidth = slides[0].clientWidth;
+  
+  // Move o carrossel
+  track.style.transform = `translateX(-${index * slideWidth}px)`;
+  
+  // Atualiza indicadores
+  indicators.forEach((indicator, i) => {
+    indicator.classList.toggle('active', i === index);
+  });
+  
+  currentSlideIndex = index;
+}
+
+function changeSlide(direction) {
+  currentSlideIndex += direction;
+  
+  if (currentSlideIndex >= totalSlides) {
+    currentSlideIndex = 0;
+  } else if (currentSlideIndex < 0) {
+    currentSlideIndex = totalSlides - 1;
+  }
+  
+  showSlide(currentSlideIndex);
+}
+
+function currentSlide(index) {
+  showSlide(index - 1);
+}
+
+// Auto-play do carrossel
+setInterval(() => {
+  changeSlide(1);
+}, 5000); // Muda a cada 5 segundos
+
+// Ajusta o carrossel quando a janela é redimensionada
+window.addEventListener('resize', () => {
+  showSlide(currentSlideIndex);
+});
